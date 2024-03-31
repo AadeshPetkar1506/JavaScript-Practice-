@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+
+        //Argument and Return
+        function areaOfCircle(radius) {
+            const area = 3.14 * radius * radius;
+            return area;
+        }
+
+        const area1 = areaOfCircle(8);
+        console.log(`Area of circle : ${area1}sq.m`);
+
+
+        //Argument but no return
+        function areaOfSquare(side) {
+            const area = side * side;
+            console.log(`Area of Square : ${area} sq.m`);
+        }
+        areaOfSquare(8);
+
+
+        //No Argument but return
+        const length = 10;
+        const breadth = 7;
+        function areaOfRectangle() {
+            const area = length * breadth;
+            return area;
+        }
+        const area2 = areaOfRectangle();
+        console.log(`Area of Rectangle : ${area2} sq.m`);
+
+
+        //No Argument no return
+        const radius = 4;
+        function circumferenceOfCircle() {
+            const circumference = 2 * 3.14 * radius;
+            console.log(`Circumference of circle : ${circumference} m`);
+        }
+        circumferenceOfCircle();
+
+
+    </script>
+</body>
+</html>
